@@ -1,0 +1,27 @@
+{
+  "name": "nft-auction-market",
+  "version": "1.0.0",
+  "description": "NFT Auction Marketplace with Chainlink Oracles",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "ethereum-waffle": "^4.0.10",
+    "chai": "^4.3.10",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-deploy": "^0.11.0",
+    "dotenv": "^16.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "@openzeppelin/contracts-upgradeable": "^4.9.0",
+    "@chainlink/contracts": "^0.6.1"
+  }
+}
